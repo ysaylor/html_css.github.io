@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard - Weather and Global Latitude</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+  
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.hmtl"><p style "color=white">Global Weather vs Latitude Analysis</p></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualization Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="max_temp.html">Latitude vs. Max Temperature</a></li>
+              <li><a href="humidity.html">Latitude vs. Humidity</a></li>
+              <li><a href="cloudiness.html">Latitude vs. Cloudiness</a></li>
+              <li><a href="wind_speed.html">Latitude vs. Wind Speed</a></li>              
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Creates the Overall Grid -->
+  <div class="content">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-12 col-md-8">
+                  <div class="box">
+                      <div class="page-header">
+                          <h1 class="title">Summary: Latitude vs. X</h1>
+                      </div>
+                      <div class="box">
+                          <img src="./images/Fig1.png" alt="Latitude vs. Max Temperature" height="230" width="300" align="left">
+                          <p class="category"> The purpose of this project was to analyze the relationship between weather and the Earth's latitude. Does the Earth's weather changes as you get closer to the equator (0 degrees Latitude)? If so, what are the affects of the weather changes? 
+                          </p>
+                            <p class="category">To accomplish this analysis, we first pulled data from the <a href="https://openweathermap.org/appid">OpenWeatherMap.org's API</a> to assemble a dataset on over 500 cities at various latitudes between the North Pole at 90 degrees North (+90 degrees) and the South Pole at 90 degrees South (-90 degrees).
+                          </p>
+                          <p class="category">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. the cities' latitude. Factors we looked at included: Maximum Temperature, Humidity, Cloudiness, and Windspeed. This site provides the source data and visualizations created as part of the analysis, as well as, explanations and descriptions of any trends and correlations witnessed.
+                          </p>
+                          <p class="category">Start exploring the site by clicking on any of the Plot images in the <b><i>Visualization Plots</i></b> section or use the menu options above.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-4">
+                  <div class="box">
+                      <div class="page-header">
+                          <h1 class="title">Visualization Plots</h1>
+                      </div>
+                      <div class="box">
+                         <a href="max_temp.html"><img src="./images/Fig1.png" alt="Latitude vs. Max Temperature" height="230" width="300" title="Latitude vs Max Temperature"></a>
+                         <a href="humidity.html"><img src="./images/Fig2.png" alt="Latitude vs. Humidity" height="230" width="300" title="Latitude vs Humidity"></a>
+                         <a href="cloudiness.html"><img src="./images/Fig3.png" alt="Latitude vs. Cloudiness" height="230" width="300" title="Latitude vs Cloudiness"></a>
+                         <a href="wind_speed.html"><img src="./images/Fig4.png" alt="Latitude vs. Wind Speed" height="230" width="300" title="Latitude vs Wind Speed"></a>
+                         
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+  </html>

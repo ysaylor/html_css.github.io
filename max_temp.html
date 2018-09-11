@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard - Max Temp vs Latitude Visualization Plot</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+      
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="index.html"><p style "color=white">Global Weather vs Latitude Analysis</p></a>
+          </div>
+    
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualization Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="max_temp.html">Latitude vs. Max Temperature</a></li>
+                  <li><a href="humidity.html">Latitude vs. Humidity</a></li>
+                  <li><a href="cloudiness.html">Latitude vs. Cloudiness</a></li>
+                  <li><a href="wind_speed.html">Latitude vs. Wind Speed</a></li>              
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+ <!-- Creates the Overall Grid -->
+ <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <div class="box">
+                        <div class="page-header">
+                        <h1 class="title">Latitude vs Max Temperature (07/22/2018)</h1>
+                        </div>
+                        <div class="box">
+                            <img src="./images/Fig1.png" alt="Latitude vs. Max Temperature" height="230" width="300" align="left">
+                            <p class="category">It is widely assumed that that the maximum temperature would be the highest at the Earth's equator. As aspected the weather's temperature becomes warmer as one approaches the equator at 0°F Latitude based on the Latitude vs Max Temperature scatterplot graph.  Based on the data retrieved from <a href="https://openweathermap.org">OpenWeatherMap's API</a> on 07/22/2018, the majority of cities at or closely near the Earth's equator had the maximum temperature over 70°F - 90°F. Countries that passes through the equator are Ecuador, Colombia, Brazil, Sao Tome & Principe, Gabon, Republic of the Congo, Democratic Republic of the Congo, Uganda, Kenya, Somalia, Maldives, Indonesia and Kiribati.</p>
+
+<p class="category">Also unsurprisingly, there are a few cities between 20°N and 40°N Latitude (particularly near the Tropic of Cancer, 23.43°N Latitude) that are above 90°F when the data was retrieved on 07/22/2018. This is not surprising since the Tropic Cancer or the Northern Tropic is the most northerly circle of latitude on Earth at which the Sun can be directly overhead at noon on June 21, the beginning of summer in the northern hemisphere. This latitude runs through Mexico, Bahamas, Egypt, Saudi Arabia, UAE, Oman, India and southern China where much of the land at or near this latitude is part of the Sahara Desert. </p>
+
+<p class="category">For cities closely near or at the Tropic of Capricorn (-23.43°S Latitude), the maximum temperature ranged from 40°F - over 80°F when the data was retrieved on 07/22/2018. The Tropic of Capricorn is the southernmost latitude on Earth at which the Sun can be directly overhead at noon on December 21, the beginning of winter in the northern hemisphere. This latitude runs through Chile, Argentina, Paraguay, Brazil, Namibia, Bostwana, South Africa, Mozambique, Madagascar, Australia and French Polynesia (clipping New Caledonia, Fiji, Tonga and the Cooks Islands).</p>
+
+<p class="category">For cities closely near or at the Arctic Circle (66.57°N Latitude), the maximum temperature ranged from 40°F - 80°F when the data was retrieved on 07/22/2018. The Arctic Circle is northernmost latitude in the Northern Hemisphere. This latitude passes through Russia, Canada, Norway, Sweden, Finland, the United States (Alaska), Denmark (Greenland) and Iceland. This is not surprising since the climate inside the Arctic Circle is generally cold, but the coastal areas of Norway have a generally mild climate as a result of the Gulf Stream, which makes the ports of northern Norway and northwest Russia ice-free all year long. In the interior, summers can be quite warm, while winters are extremely cold. For example, summer temperatures in Norilsk, Russia will sometimes reach as high as 86°F, while the winter temperatures frequently fall below −58°F.</p>
+
+<p class="category">Finally there were no cities recorded that are closely near or at the Antarctic Circle (-66.57°S Latitude). This is not surprising as the Antarctic Circle is the northernmost latitude in the Southern Hemisphere where the sun can remain continously above or partically below the horizon for 24 hours. This results in at least once each year at any location within the Antarctic Circle the sun is visible at local midnight, and at least once it is partially obscured at local noon. The latitude runs through the South Ocean and the tip of Anarctica. Immediately to the south of the latitude is mainly the Antarctica continent which does not have any permanent human inhabitants. On Antarctica there are no cities or villages, 98% of the continent is covered by ice. The nearest countries north of Antarctica are South Africa, Australia, New Zealand, Chile and Argentina.</p>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="col-sm-12 col-md-4">
+                    <div class="box">
+                        <div class="page-header">
+                            <h1 class="title">Visualization Plots</h1>
+                        </div>
+                        <div class="box">
+                           <a href="max_speed.html"><img src="./images/Fig1.png" alt="Latitude vs. Max Temperature" height="230" width="300" title="Latitude vs Max Temperature"></a>
+                           <a href="humidity.html"><img src="./images/Fig2.png" alt="Latitude vs. Humidity" height="230" width="300" title="Latitude vs Humidity"></a>
+                           <a href="cloudiness.html"><img src="./images/Fig3.png" alt="Latitude vs. Cloudiness" height="230" width="300" title="Latitude vs Cloudiness"></a>
+                           <a href="wind_speed.html"><img src="./images/Fig4.png" alt="Latitude vs. Wind Speed" height="230" width="300" title="Latitude vs Wind Speed"></a>
+                           
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+</body>
+
+<!-- JQuery, Popper, and Bootstrap Javascripts to run components in Bootstrap-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</hmtl>
